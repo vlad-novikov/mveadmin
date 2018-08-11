@@ -1,0 +1,9 @@
+﻿{
+  "RootNamespace": "Mveadmin",
+  "ServerTypings": {
+    "Assemblies": []
+  },
+  "Connections": [],
+  "BaseRowClasses": [],
+  "RemoveForeignFields": []
+}

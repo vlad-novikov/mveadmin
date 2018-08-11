@@ -1,0 +1,11 @@
+C:\Git\mveadmin\mveadmin.Web\bin\Debug\netcoreapp2.0\Mveadmin.Web.deps.json
+C:\Git\mveadmin\mveadmin.Web\bin\Debug\netcoreapp2.0\Mveadmin.Web.runtimeconfig.json
+C:\Git\mveadmin\mveadmin.Web\bin\Debug\netcoreapp2.0\Mveadmin.Web.runtimeconfig.dev.json
+C:\Git\mveadmin\mveadmin.Web\bin\Debug\netcoreapp2.0\Mveadmin.Web.dll
+C:\Git\mveadmin\mveadmin.Web\bin\Debug\netcoreapp2.0\Mveadmin.Web.pdb
+C:\Git\mveadmin\mveadmin.Web\obj\Debug\netcoreapp2.0\mveadmin.Web.csprojAssemblyReference.cache
+C:\Git\mveadmin\mveadmin.Web\obj\Debug\netcoreapp2.0\mveadmin.Web.csproj.CoreCompileInputs.cache
+C:\Git\mveadmin\mveadmin.Web\obj\Debug\netcoreapp2.0\mveadmin.Web.AssemblyInfoInputs.cache
+C:\Git\mveadmin\mveadmin.Web\obj\Debug\netcoreapp2.0\mveadmin.Web.AssemblyInfo.cs
+C:\Git\mveadmin\mveadmin.Web\obj\Debug\netcoreapp2.0\Mveadmin.Web.dll
+C:\Git\mveadmin\mveadmin.Web\obj\Debug\netcoreapp2.0\Mveadmin.Web.pdb
