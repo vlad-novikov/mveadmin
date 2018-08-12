@@ -810,6 +810,139 @@ var Mveadmin;
 })(Mveadmin || (Mveadmin = {}));
 var Mveadmin;
 (function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentCommodityRateForm = /** @class */ (function (_super) {
+            __extends(AppEquipmentCommodityRateForm, _super);
+            function AppEquipmentCommodityRateForm(prefix) {
+                var _this = _super.call(this, prefix) || this;
+                if (!AppEquipmentCommodityRateForm.init) {
+                    AppEquipmentCommodityRateForm.init = true;
+                    var s = Serenity;
+                    var w0 = s.StringEditor;
+                    var w1 = s.DecimalEditor;
+                    Q.initFormType(AppEquipmentCommodityRateForm, [
+                        'Process', w0,
+                        'EquipmentType', w0,
+                        'MarCNumber', w0,
+                        'MarketingCategory', w0,
+                        'Stage', w0,
+                        'MillLiningType', w0,
+                        'Equipment', w0,
+                        'Type', w0,
+                        'CommodityType', w0,
+                        'Uom', w0,
+                        'AbrasivityYesNo', w0,
+                        'Quantity', w0,
+                        'Length', w0,
+                        'WidthOrDiameter', w0,
+                        'Level0to100', w1,
+                        'Level100to600', w1,
+                        'Level600to1200', w1,
+                        'Level1200to1700', w1,
+                        'Level1700to5000', w1
+                    ]);
+                }
+                return _this;
+            }
+            AppEquipmentCommodityRateForm.formKey = 'Mve.AppEquipmentCommodityRate';
+            return AppEquipmentCommodityRateForm;
+        }(Serenity.PrefixedContext));
+        Mve.AppEquipmentCommodityRateForm = AppEquipmentCommodityRateForm;
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentCommodityRateRow;
+        (function (AppEquipmentCommodityRateRow) {
+            AppEquipmentCommodityRateRow.idProperty = 'Id';
+            AppEquipmentCommodityRateRow.nameProperty = 'Process';
+            AppEquipmentCommodityRateRow.localTextPrefix = 'Mve.AppEquipmentCommodityRate';
+        })(AppEquipmentCommodityRateRow = Mve.AppEquipmentCommodityRateRow || (Mve.AppEquipmentCommodityRateRow = {}));
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentCommodityRateService;
+        (function (AppEquipmentCommodityRateService) {
+            AppEquipmentCommodityRateService.baseUrl = 'Mve/AppEquipmentCommodityRate';
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                AppEquipmentCommodityRateService[x] = function (r, s, o) {
+                    return Q.serviceRequest(AppEquipmentCommodityRateService.baseUrl + '/' + x, r, s, o);
+                };
+            });
+        })(AppEquipmentCommodityRateService = Mve.AppEquipmentCommodityRateService || (Mve.AppEquipmentCommodityRateService = {}));
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentMarketingCategoryForm = /** @class */ (function (_super) {
+            __extends(AppEquipmentMarketingCategoryForm, _super);
+            function AppEquipmentMarketingCategoryForm(prefix) {
+                var _this = _super.call(this, prefix) || this;
+                if (!AppEquipmentMarketingCategoryForm.init) {
+                    AppEquipmentMarketingCategoryForm.init = true;
+                    var s = Serenity;
+                    var w0 = s.StringEditor;
+                    Q.initFormType(AppEquipmentMarketingCategoryForm, [
+                        'Description', w0
+                    ]);
+                }
+                return _this;
+            }
+            AppEquipmentMarketingCategoryForm.formKey = 'Mve.AppEquipmentMarketingCategory';
+            return AppEquipmentMarketingCategoryForm;
+        }(Serenity.PrefixedContext));
+        Mve.AppEquipmentMarketingCategoryForm = AppEquipmentMarketingCategoryForm;
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentMarketingCategoryRow;
+        (function (AppEquipmentMarketingCategoryRow) {
+            AppEquipmentMarketingCategoryRow.idProperty = 'Code';
+            AppEquipmentMarketingCategoryRow.nameProperty = 'Code';
+            AppEquipmentMarketingCategoryRow.localTextPrefix = 'Mve.AppEquipmentMarketingCategory';
+        })(AppEquipmentMarketingCategoryRow = Mve.AppEquipmentMarketingCategoryRow || (Mve.AppEquipmentMarketingCategoryRow = {}));
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentMarketingCategoryService;
+        (function (AppEquipmentMarketingCategoryService) {
+            AppEquipmentMarketingCategoryService.baseUrl = 'Mve/AppEquipmentMarketingCategory';
+            [
+                'Create',
+                'Update',
+                'Delete',
+                'Retrieve',
+                'List'
+            ].forEach(function (x) {
+                AppEquipmentMarketingCategoryService[x] = function (r, s, o) {
+                    return Q.serviceRequest(AppEquipmentMarketingCategoryService.baseUrl + '/' + x, r, s, o);
+                };
+            });
+        })(AppEquipmentMarketingCategoryService = Mve.AppEquipmentMarketingCategoryService || (Mve.AppEquipmentMarketingCategoryService = {}));
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
     var Northwind;
     (function (Northwind) {
         var CategoryForm = /** @class */ (function (_super) {
@@ -3817,6 +3950,98 @@ var Mveadmin;
         }());
         Common.UserPreferenceStorage = UserPreferenceStorage;
     })(Common = Mveadmin.Common || (Mveadmin.Common = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentCommodityRateDialog = /** @class */ (function (_super) {
+            __extends(AppEquipmentCommodityRateDialog, _super);
+            function AppEquipmentCommodityRateDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new Mve.AppEquipmentCommodityRateForm(_this.idPrefix);
+                return _this;
+            }
+            AppEquipmentCommodityRateDialog.prototype.getFormKey = function () { return Mve.AppEquipmentCommodityRateForm.formKey; };
+            AppEquipmentCommodityRateDialog.prototype.getIdProperty = function () { return Mve.AppEquipmentCommodityRateRow.idProperty; };
+            AppEquipmentCommodityRateDialog.prototype.getLocalTextPrefix = function () { return Mve.AppEquipmentCommodityRateRow.localTextPrefix; };
+            AppEquipmentCommodityRateDialog.prototype.getNameProperty = function () { return Mve.AppEquipmentCommodityRateRow.nameProperty; };
+            AppEquipmentCommodityRateDialog.prototype.getService = function () { return Mve.AppEquipmentCommodityRateService.baseUrl; };
+            AppEquipmentCommodityRateDialog = __decorate([
+                Serenity.Decorators.registerClass()
+            ], AppEquipmentCommodityRateDialog);
+            return AppEquipmentCommodityRateDialog;
+        }(Serenity.EntityDialog));
+        Mve.AppEquipmentCommodityRateDialog = AppEquipmentCommodityRateDialog;
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentCommodityRateGrid = /** @class */ (function (_super) {
+            __extends(AppEquipmentCommodityRateGrid, _super);
+            function AppEquipmentCommodityRateGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            AppEquipmentCommodityRateGrid.prototype.getColumnsKey = function () { return 'Mve.AppEquipmentCommodityRate'; };
+            AppEquipmentCommodityRateGrid.prototype.getDialogType = function () { return Mve.AppEquipmentCommodityRateDialog; };
+            AppEquipmentCommodityRateGrid.prototype.getIdProperty = function () { return Mve.AppEquipmentCommodityRateRow.idProperty; };
+            AppEquipmentCommodityRateGrid.prototype.getLocalTextPrefix = function () { return Mve.AppEquipmentCommodityRateRow.localTextPrefix; };
+            AppEquipmentCommodityRateGrid.prototype.getService = function () { return Mve.AppEquipmentCommodityRateService.baseUrl; };
+            AppEquipmentCommodityRateGrid = __decorate([
+                Serenity.Decorators.registerClass()
+            ], AppEquipmentCommodityRateGrid);
+            return AppEquipmentCommodityRateGrid;
+        }(Serenity.EntityGrid));
+        Mve.AppEquipmentCommodityRateGrid = AppEquipmentCommodityRateGrid;
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentMarketingCategoryDialog = /** @class */ (function (_super) {
+            __extends(AppEquipmentMarketingCategoryDialog, _super);
+            function AppEquipmentMarketingCategoryDialog() {
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this.form = new Mve.AppEquipmentMarketingCategoryForm(_this.idPrefix);
+                return _this;
+            }
+            AppEquipmentMarketingCategoryDialog.prototype.getFormKey = function () { return Mve.AppEquipmentMarketingCategoryForm.formKey; };
+            AppEquipmentMarketingCategoryDialog.prototype.getIdProperty = function () { return Mve.AppEquipmentMarketingCategoryRow.idProperty; };
+            AppEquipmentMarketingCategoryDialog.prototype.getLocalTextPrefix = function () { return Mve.AppEquipmentMarketingCategoryRow.localTextPrefix; };
+            AppEquipmentMarketingCategoryDialog.prototype.getNameProperty = function () { return Mve.AppEquipmentMarketingCategoryRow.nameProperty; };
+            AppEquipmentMarketingCategoryDialog.prototype.getService = function () { return Mve.AppEquipmentMarketingCategoryService.baseUrl; };
+            AppEquipmentMarketingCategoryDialog = __decorate([
+                Serenity.Decorators.registerClass()
+            ], AppEquipmentMarketingCategoryDialog);
+            return AppEquipmentMarketingCategoryDialog;
+        }(Serenity.EntityDialog));
+        Mve.AppEquipmentMarketingCategoryDialog = AppEquipmentMarketingCategoryDialog;
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
+})(Mveadmin || (Mveadmin = {}));
+var Mveadmin;
+(function (Mveadmin) {
+    var Mve;
+    (function (Mve) {
+        var AppEquipmentMarketingCategoryGrid = /** @class */ (function (_super) {
+            __extends(AppEquipmentMarketingCategoryGrid, _super);
+            function AppEquipmentMarketingCategoryGrid(container) {
+                return _super.call(this, container) || this;
+            }
+            AppEquipmentMarketingCategoryGrid.prototype.getColumnsKey = function () { return 'Mve.AppEquipmentMarketingCategory'; };
+            AppEquipmentMarketingCategoryGrid.prototype.getDialogType = function () { return Mve.AppEquipmentMarketingCategoryDialog; };
+            AppEquipmentMarketingCategoryGrid.prototype.getIdProperty = function () { return Mve.AppEquipmentMarketingCategoryRow.idProperty; };
+            AppEquipmentMarketingCategoryGrid.prototype.getLocalTextPrefix = function () { return Mve.AppEquipmentMarketingCategoryRow.localTextPrefix; };
+            AppEquipmentMarketingCategoryGrid.prototype.getService = function () { return Mve.AppEquipmentMarketingCategoryService.baseUrl; };
+            AppEquipmentMarketingCategoryGrid = __decorate([
+                Serenity.Decorators.registerClass()
+            ], AppEquipmentMarketingCategoryGrid);
+            return AppEquipmentMarketingCategoryGrid;
+        }(Serenity.EntityGrid));
+        Mve.AppEquipmentMarketingCategoryGrid = AppEquipmentMarketingCategoryGrid;
+    })(Mve = Mveadmin.Mve || (Mveadmin.Mve = {}));
 })(Mveadmin || (Mveadmin = {}));
 var Mveadmin;
 (function (Mveadmin) {

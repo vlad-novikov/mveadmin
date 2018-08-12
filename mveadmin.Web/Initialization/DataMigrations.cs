@@ -17,7 +17,7 @@
         private static string[] databaseKeys = new[] {
             "Default"
             //<if:Northwind>
-            , "Northwind"
+            //, "Northwind"
             //</if:Northwind>
         };
 

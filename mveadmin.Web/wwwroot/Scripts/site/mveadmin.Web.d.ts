@@ -780,6 +780,148 @@ declare namespace Mveadmin.Membership {
         Password?: string;
     }
 }
+declare namespace Mveadmin.Mve {
+}
+declare namespace Mveadmin.Mve {
+    interface AppEquipmentCommodityRateForm {
+        Process: Serenity.StringEditor;
+        EquipmentType: Serenity.StringEditor;
+        MarCNumber: Serenity.StringEditor;
+        MarketingCategory: Serenity.StringEditor;
+        Stage: Serenity.StringEditor;
+        MillLiningType: Serenity.StringEditor;
+        Equipment: Serenity.StringEditor;
+        Type: Serenity.StringEditor;
+        CommodityType: Serenity.StringEditor;
+        Uom: Serenity.StringEditor;
+        AbrasivityYesNo: Serenity.StringEditor;
+        Quantity: Serenity.StringEditor;
+        Length: Serenity.StringEditor;
+        WidthOrDiameter: Serenity.StringEditor;
+        Level0to100: Serenity.DecimalEditor;
+        Level100to600: Serenity.DecimalEditor;
+        Level600to1200: Serenity.DecimalEditor;
+        Level1200to1700: Serenity.DecimalEditor;
+        Level1700to5000: Serenity.DecimalEditor;
+    }
+    class AppEquipmentCommodityRateForm extends Serenity.PrefixedContext {
+        static formKey: string;
+        private static init;
+        constructor(prefix: string);
+    }
+}
+declare namespace Mveadmin.Mve {
+    interface AppEquipmentCommodityRateRow {
+        Id?: number;
+        Process?: string;
+        EquipmentType?: string;
+        MarCNumber?: string;
+        MarketingCategory?: string;
+        Stage?: string;
+        MillLiningType?: string;
+        Equipment?: string;
+        Type?: string;
+        CommodityType?: string;
+        Uom?: string;
+        AbrasivityYesNo?: string;
+        Quantity?: string;
+        Length?: string;
+        WidthOrDiameter?: string;
+        Level0to100?: number;
+        Level100to600?: number;
+        Level600to1200?: number;
+        Level1200to1700?: number;
+        Level1700to5000?: number;
+    }
+    namespace AppEquipmentCommodityRateRow {
+        const idProperty = "Id";
+        const nameProperty = "Process";
+        const localTextPrefix = "Mve.AppEquipmentCommodityRate";
+        const enum Fields {
+            Id = "Id",
+            Process = "Process",
+            EquipmentType = "EquipmentType",
+            MarCNumber = "MarCNumber",
+            MarketingCategory = "MarketingCategory",
+            Stage = "Stage",
+            MillLiningType = "MillLiningType",
+            Equipment = "Equipment",
+            Type = "Type",
+            CommodityType = "CommodityType",
+            Uom = "Uom",
+            AbrasivityYesNo = "AbrasivityYesNo",
+            Quantity = "Quantity",
+            Length = "Length",
+            WidthOrDiameter = "WidthOrDiameter",
+            Level0to100 = "Level0to100",
+            Level100to600 = "Level100to600",
+            Level600to1200 = "Level600to1200",
+            Level1200to1700 = "Level1200to1700",
+            Level1700to5000 = "Level1700to5000",
+        }
+    }
+}
+declare namespace Mveadmin.Mve {
+    namespace AppEquipmentCommodityRateService {
+        const baseUrl = "Mve/AppEquipmentCommodityRate";
+        function Create(request: Serenity.SaveRequest<AppEquipmentCommodityRateRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Update(request: Serenity.SaveRequest<AppEquipmentCommodityRateRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<AppEquipmentCommodityRateRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<AppEquipmentCommodityRateRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        const enum Methods {
+            Create = "Mve/AppEquipmentCommodityRate/Create",
+            Update = "Mve/AppEquipmentCommodityRate/Update",
+            Delete = "Mve/AppEquipmentCommodityRate/Delete",
+            Retrieve = "Mve/AppEquipmentCommodityRate/Retrieve",
+            List = "Mve/AppEquipmentCommodityRate/List",
+        }
+    }
+}
+declare namespace Mveadmin.Mve {
+}
+declare namespace Mveadmin.Mve {
+    interface AppEquipmentMarketingCategoryForm {
+        Description: Serenity.StringEditor;
+    }
+    class AppEquipmentMarketingCategoryForm extends Serenity.PrefixedContext {
+        static formKey: string;
+        private static init;
+        constructor(prefix: string);
+    }
+}
+declare namespace Mveadmin.Mve {
+    interface AppEquipmentMarketingCategoryRow {
+        Code?: string;
+        Description?: string;
+    }
+    namespace AppEquipmentMarketingCategoryRow {
+        const idProperty = "Code";
+        const nameProperty = "Code";
+        const localTextPrefix = "Mve.AppEquipmentMarketingCategory";
+        const enum Fields {
+            Code = "Code",
+            Description = "Description",
+        }
+    }
+}
+declare namespace Mveadmin.Mve {
+    namespace AppEquipmentMarketingCategoryService {
+        const baseUrl = "Mve/AppEquipmentMarketingCategory";
+        function Create(request: Serenity.SaveRequest<AppEquipmentMarketingCategoryRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Update(request: Serenity.SaveRequest<AppEquipmentMarketingCategoryRow>, onSuccess?: (response: Serenity.SaveResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Delete(request: Serenity.DeleteRequest, onSuccess?: (response: Serenity.DeleteResponse) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function Retrieve(request: Serenity.RetrieveRequest, onSuccess?: (response: Serenity.RetrieveResponse<AppEquipmentMarketingCategoryRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        function List(request: Serenity.ListRequest, onSuccess?: (response: Serenity.ListResponse<AppEquipmentMarketingCategoryRow>) => void, opt?: Q.ServiceOptions<any>): JQueryXHR;
+        const enum Methods {
+            Create = "Mve/AppEquipmentMarketingCategory/Create",
+            Update = "Mve/AppEquipmentMarketingCategory/Update",
+            Delete = "Mve/AppEquipmentMarketingCategory/Delete",
+            Retrieve = "Mve/AppEquipmentMarketingCategory/Retrieve",
+            List = "Mve/AppEquipmentMarketingCategory/List",
+        }
+    }
+}
 declare namespace Mveadmin.Northwind {
 }
 declare namespace Mveadmin.Northwind {
@@ -2347,6 +2489,46 @@ declare namespace Mveadmin.Common {
     class UserPreferenceStorage implements Serenity.SettingStorage {
         getItem(key: string): string;
         setItem(key: string, data: string): void;
+    }
+}
+declare namespace Mveadmin.Mve {
+    class AppEquipmentCommodityRateDialog extends Serenity.EntityDialog<AppEquipmentCommodityRateRow, any> {
+        protected getFormKey(): string;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getNameProperty(): string;
+        protected getService(): string;
+        protected form: AppEquipmentCommodityRateForm;
+    }
+}
+declare namespace Mveadmin.Mve {
+    class AppEquipmentCommodityRateGrid extends Serenity.EntityGrid<AppEquipmentCommodityRateRow, any> {
+        protected getColumnsKey(): string;
+        protected getDialogType(): typeof AppEquipmentCommodityRateDialog;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getService(): string;
+        constructor(container: JQuery);
+    }
+}
+declare namespace Mveadmin.Mve {
+    class AppEquipmentMarketingCategoryDialog extends Serenity.EntityDialog<AppEquipmentMarketingCategoryRow, any> {
+        protected getFormKey(): string;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getNameProperty(): string;
+        protected getService(): string;
+        protected form: AppEquipmentMarketingCategoryForm;
+    }
+}
+declare namespace Mveadmin.Mve {
+    class AppEquipmentMarketingCategoryGrid extends Serenity.EntityGrid<AppEquipmentMarketingCategoryRow, any> {
+        protected getColumnsKey(): string;
+        protected getDialogType(): typeof AppEquipmentMarketingCategoryDialog;
+        protected getIdProperty(): string;
+        protected getLocalTextPrefix(): string;
+        protected getService(): string;
+        constructor(container: JQuery);
     }
 }
 declare namespace Mveadmin.Northwind {

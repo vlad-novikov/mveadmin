@@ -1,0 +1,37 @@
+Используются параметры запуска из C:\Git\mveadmin\mveadmin.Web\Properties\launchSettings.json...
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Users\SergeyKr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Application startup exception: System.InvalidOperationException: No connection string with key Northwind in configuration file!
+   at Serenity.Data.SqlConnections.GetConnectionString(String connectionKey) in C:\Projects\StartSharp\Serenity\Serenity.Data\Connections\SqlConnections.cs:line 86
+   at Mveadmin.DataMigrations.EnsureDatabase(String databaseKey) in C:\Git\mveadmin\mveadmin.Web\Initialization\DataMigrations.cs:line 39
+   at Mveadmin.DataMigrations.Initialize() in C:\Git\mveadmin\mveadmin.Web\Initialization\DataMigrations.cs:line 28
+   at Mveadmin.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory) in C:\Git\mveadmin\mveadmin.Web\Initialization\Startup.cs:line 125
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+crit: Microsoft.AspNetCore.Hosting.Internal.WebHost[6]
+      Application startup exception
+System.InvalidOperationException: No connection string with key Northwind in configuration file!
+   at Serenity.Data.SqlConnections.GetConnectionString(String connectionKey) in C:\Projects\StartSharp\Serenity\Serenity.Data\Connections\SqlConnections.cs:line 86
+   at Mveadmin.DataMigrations.EnsureDatabase(String databaseKey) in C:\Git\mveadmin\mveadmin.Web\Initialization\DataMigrations.cs:line 39
+   at Mveadmin.DataMigrations.Initialize() in C:\Git\mveadmin\mveadmin.Web\Initialization\DataMigrations.cs:line 28
+   at Mveadmin.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory) in C:\Git\mveadmin\mveadmin.Web\Initialization\Startup.cs:line 125
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+crit: Microsoft.AspNetCore.Hosting.Internal.WebHost[6]
+      Application startup exception
+System.InvalidOperationException: No connection string with key Northwind in configuration file!
+   at Serenity.Data.SqlConnections.GetConnectionString(String connectionKey) in C:\Projects\StartSharp\Serenity\Serenity.Data\Connections\SqlConnections.cs:line 86
+   at Mveadmin.DataMigrations.EnsureDatabase(String databaseKey) in C:\Git\mveadmin\mveadmin.Web\Initialization\DataMigrations.cs:line 39
+   at Mveadmin.DataMigrations.Initialize() in C:\Git\mveadmin\mveadmin.Web\Initialization\DataMigrations.cs:line 28
+   at Mveadmin.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory) in C:\Git\mveadmin\mveadmin.Web\Initialization\Startup.cs:line 125
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()

@@ -1,9 +1,35 @@
-﻿{
+{
   "RootNamespace": "Mveadmin",
   "ServerTypings": {
     "Assemblies": []
   },
-  "Connections": [],
+  "Connections": [
+    {
+      "Key": "MVE",
+      "Tables": [
+        {
+          "Tablename": "dbo.AppEquipmentCommodityRate",
+          "Identifier": "AppEquipmentCommodityRate",
+          "Module": "Mve",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.AppEquipmentCommodityRates",
+          "Identifier": "AppEquipmentCommodityRates",
+          "Module": "Mve",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.AppEquipmentMarketingCategory",
+          "Identifier": "AppEquipmentMarketingCategory",
+          "Module": "Mve",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
   "BaseRowClasses": [],
-  "RemoveForeignFields": []
+  "RemoveForeignFields": [],
+  "CustomGenerate": {},
+  "CustomSettings": {}
 }
